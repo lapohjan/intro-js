@@ -21,7 +21,7 @@
       
       <script>
       function blink () { 
-        $("#hplusLogo").fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500, blink);
+        $("#hplusLogo").fadeOut(1500).fadeIn(1500).fadeOut(1500).fadeIn(1500, blink);
       }
       blink();
     </script>
@@ -135,6 +135,10 @@
         <h2 class="product-name" data-type="mineralwater">Raspberry Mineral Water</h2>
     </li>
   </ul><!-- product-list -->
+
+
+
+
 </section><!-- #products -->
 
 <section id="guarantee" class="section">
@@ -258,8 +262,21 @@
     });
   
   });
-  
   </script>
+
+<script>
+  $('[data-type="mineralwater"]').css('background', 'green');
+  $('[data-type="proteinbar"]').css('background', 'blue');
+  </script>
+
+<script>
+$('.card-text').each(function() {
+  var text = $(this);
+  text.html(text.html().replace(/^(\w+)/, '<b>$1</b>'));
+});
+
+
+</script>
 
 
 </body>
