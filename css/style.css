@@ -639,3 +639,10 @@ em {
 #button2:active {
   background-color: #555;
 }
+
+.print-page-btn {
+  right: 100px;
+  color: white;
+  width: 150px;
+  padding: 10px 0;
+}
