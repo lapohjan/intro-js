@@ -239,7 +239,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <a id="button"></a>
-
+<a id="button2"></a>
 
 
 <script>
@@ -276,6 +276,18 @@ $('.card-text').each(function() {
 });
 
 
+</script>
+
+<script>
+$.ajax({
+  url:'//api.openweathermap.org/data/2.5/weather?q=helsinki&units=metric&APIKEY=6a4967bfd60b6ee990bf8deb41ca8927}).done(function (data)
+console.log(data);
+$('.button2').text(resp.name 
++ 'is today '
++ resp.main.temp
++ ' and it feels like '
++ resp.main.feels_like);
+});
 </script>
 
 
